@@ -1,0 +1,13 @@
+[Unit]
+Description=TODO API Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/app/todo-api
+ExecStart=/bin/bash /app/todo-api/todo-api-launcher.sh
+
+[Install]
+WantedBy=multi-user.target
