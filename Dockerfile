@@ -10,4 +10,6 @@ ADD . .
 
 RUN npm install
 
+EXPOSE 8082
+
 ENTRYPOINT npm start
